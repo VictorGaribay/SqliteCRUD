@@ -7,9 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.raitom.sqlitecrud.DetailActivity;
-import com.raitom.sqlitecrud.ItemClickListener;
-import com.raitom.sqlitecrud.MyHolder;
+import com.raitom.sqlitecrud.ui.DetailActivity;
+import com.raitom.sqlitecrud.ui.ItemClickListener;
+import com.raitom.sqlitecrud.ui.MyHolder;
 import com.raitom.sqlitecrud.R;
 import com.raitom.sqlitecrud.model.Persona;
 

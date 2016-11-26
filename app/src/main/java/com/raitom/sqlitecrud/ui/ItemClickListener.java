@@ -1,4 +1,4 @@
-package com.raitom.sqlitecrud;
+package com.raitom.sqlitecrud.ui;
 
 import android.view.View;
 

@@ -8,7 +8,7 @@ package com.raitom.sqlitecrud.db;
 
 public class DataB {
 
-    //COLUMNS
+    //COLUMNS CLIENTES
     static final String ID= "id";
     static final String NOMBRE= "nombre";
     static final String APELLIDO= "apellido";
@@ -21,12 +21,48 @@ public class DataB {
     static final String NAME = "name";
     static final String POSITION = "position";*/
     //DataB PROPERTIES
+
+  //COLUMNS PRESTAMOS
+  static final String IDPRESTAMOS= ID;
+    static final String MONTO= "monto";
+    static final String INTERES= "apellido";
+    static final String PLAZOMESES= "plazo_meses";
+    static final String FECHACOMEINZO= "fecha_comienzo";
+
+
+    //COLUMNS PAGOS
+    static final String IDPAGOS= IDPRESTAMOS;
+    static final String CANTIDAD= "cantidad";
+    static final String FECHAPAGO= "fecha_pago";
+    static final String FECHAVENCIMIENTO= "fecha_vencimiento";
+
+
+
     static final String DB_NAME="b_DB";
-    static final String TB_NAME="b_TB";
     static final int DB_VERSION='1';
-    //CREATE TABLE
+    static final String TB_NAME="b_TB";
+    static final String TB_PRESTAMO="b_PRESTAMO";
+    static final String TB_PAGOS="b_PAGOS";
+
+    //CREATE TABLE CLIENTES
     static final String CREATE_TB=  "CREATE TABLE b_TB(ID INTEGER  PRIMARY KEY  AUTOINCREMENT, nombre TEXT NOT NULL,"
             + "apellido TEXT NOT NULL,dni TEXT NOT NULL,direccion TEXT NOT NULL,telefono TEXT NOT NULL,dirtrabajo TEXT NOT NULL,ocupacion TEXT NOT NULL);";
+
+    //CREATE TABLE PRESTAMOS
+
+    static final String CREATE_PRESTAMO=  "CREATE TABLE b_TB(ID INTEGER  PRIMARY KEY  AUTOINCREMENT, nombre TEXT NOT NULL,"
+            + "apellido TEXT NOT NULL,dni TEXT NOT NULL,direccion TEXT NOT NULL,telefono TEXT NOT NULL,dirtrabajo TEXT NOT NULL,ocupacion TEXT NOT NULL);";
+
+
+    static final String CREATE_PAGOS=  "CREATE TABLE b_TB(ID INTEGER  PRIMARY KEY  AUTOINCREMENT, nombre TEXT NOT NULL,"
+            + "apellido TEXT NOT NULL,dni TEXT NOT NULL,direccion TEXT NOT NULL,telefono TEXT NOT NULL,dirtrabajo TEXT NOT NULL,ocupacion TEXT NOT NULL);";
+
+
+    //CREATE TABLE PAGOS
+
+
+
+
 
 
 

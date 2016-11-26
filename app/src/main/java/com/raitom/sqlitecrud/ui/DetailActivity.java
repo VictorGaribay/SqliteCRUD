@@ -1,4 +1,4 @@
-package com.raitom.sqlitecrud;
+package com.raitom.sqlitecrud.ui;
 
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 
+import com.raitom.sqlitecrud.R;
 import com.raitom.sqlitecrud.db.DBAdapter;
 
 public class DetailActivity extends AppCompatActivity {

@@ -1,8 +1,10 @@
-package com.raitom.sqlitecrud;
+package com.raitom.sqlitecrud.ui;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
+
+import com.raitom.sqlitecrud.R;
 
 /**
  * Created by raitom on 29/10/16.

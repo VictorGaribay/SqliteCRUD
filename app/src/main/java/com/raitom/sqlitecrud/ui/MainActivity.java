@@ -1,4 +1,4 @@
-package com.raitom.sqlitecrud;
+package com.raitom.sqlitecrud.ui;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -6,6 +6,7 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
@@ -16,6 +17,7 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.raitom.sqlitecrud.R;
 import com.raitom.sqlitecrud.adapter.MyAdapter;
 import com.raitom.sqlitecrud.db.DBAdapter;
 import com.raitom.sqlitecrud.model.Persona;
@@ -49,7 +51,14 @@ public class MainActivity extends AppCompatActivity {
         //ADAPTER
         adapter=new MyAdapter(this,personas);
         retrieve();
+
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+
     }
+
+
     private void showDialog()
     {
         Dialog d=new Dialog(this);

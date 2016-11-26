@@ -2,4 +2,6 @@
     <string name="app_name">Clientes</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_detail">Editar Clientes</string>
+
+    <string name="login">Inicio de sesión</string>
 </resources>
